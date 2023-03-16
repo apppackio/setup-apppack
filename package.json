@@ -1,0 +1,23 @@
+{
+  "name": "setup-apppack-cli",
+  "version": "1.0.0",
+  "description": "Downloads the latest release of the AppPack CLI tool from the apppackio/apppack repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apppackio/setup-apppack-cli.git"
+  },
+  "author": "Peter Baumgartner <pete@lincolnloop.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apppackio/setup-apppack-cli/issues"
+  },
+  "homepage": "https://github.com/apppackio/setup-apppack-cli#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/tool-cache": "^2.0.1"
+  }
+}

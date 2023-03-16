@@ -1,0 +1,16 @@
+name: Setup AppPack CLI
+description: Downloads the latest release of the AppPack CLI tool from the apppackio/apppack repository.
+author: Peter Baumgartner
+
+inputs:
+  version:
+    description: The version of the AppPack CLI to download. If not specified, the latest release will be downloaded.
+    required: false
+    default: ''
+outputs:
+  version:
+    description: The version of the AppPack CLI that was downloaded.
+
+runs:
+  using: 'node16'
+  main: 'index.js'

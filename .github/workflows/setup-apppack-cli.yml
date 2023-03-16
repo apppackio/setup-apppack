@@ -1,0 +1,20 @@
+---
+name: Setup AppPack CLI
+
+on: [push]
+
+jobs:
+  setup-apppack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup AppPack CLI
+        id: setup-apppack-cli
+        uses: ./
+
+      - name: Run AppPack
+        run: |
+          apppack version
+          test "$(apppack version)" = "${{ steps.setup-apppack-cli.outputs.version }}"
